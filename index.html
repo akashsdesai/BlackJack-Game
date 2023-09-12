@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="overlay" id="menu">
+      <p>Enter Your Name</p>
+      <input id="inn1" type="text">
+      <p>Enter Your Chips</p>
+      <input id="inn2" type="number">
+      <button onclick="toggle()">Start Playing</button>
+    </div>
+    <div class="setup" id="Go0">
+      <div class="game">
+      <img src="back.jpg" class="background">
+      <div class="info">
+        <h1>BlackJack</h1>
+        <p id="message">Want to play a round?</p>
+        <p id="cards">Cards:</p>
+        <p id="sum">Sum:</p>
+        <div class="start">
+          <button onclick="startGame()">Start Game</button>
+          <button onclick="newCard()">New Card</button>
+        </div>
+        <p id="player"></p>
+      </div>
+    </div>
+    <button onclick="newUser()">New Player</button>
+   </div>
+    <script src="index.js"></Script>
+  </body>
+</html>

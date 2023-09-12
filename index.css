@@ -1,0 +1,117 @@
+.setup{
+  position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 1s;
+}
+.setup.active{
+  visibility: visible;
+	opacity: 1;
+}
+
+.game p{
+  margin:0;
+  font-family: Arial;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 1s;
+}
+p{
+  margin:25px 0 2px 0;
+  font-family: Arial;
+  color:black;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.015s;
+}
+.game h1{
+  margin:0;
+  font-family: Arial;
+  color:goldenrod;
+  transition: all 1s;
+}
+.game{
+  width:600px;
+  display: flex;
+  position: relative;
+}
+.background{
+  width:100%;
+  border-radius: 25px;
+}
+.overlay{
+  position: absolute;
+  top:10px;
+  display: flex;
+  width:100%;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  visibility: visible;
+}
+.overlay.shut{
+  visibility: hidden;
+}
+.overlay input{
+  padding-left:20px;
+  width:200px;
+  margin-bottom: 10px;
+  border: none;
+  height:25px;
+  box-shadow:inset 0 0 5px rgba(0,0,0,0.4);
+  border-radius: 20px;
+}
+button{
+  margin:15px 0;
+  border:none;
+  border-radius: 15px;
+  background-color: goldenrod;
+  padding: 5px 25px;
+}
+button:hover{
+  cursor: pointer;
+}
+button:active{
+  background-color: gold;
+}
+.info{
+  align-items: center;
+  position: fixed;
+  width:100%;
+  height:100%;
+  position:absolute;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#message{
+  font-style: italic;
+}
+.game button{
+  padding:8px 40px;
+  border:none;
+  border-radius: 10px;
+  background-color: goldenrod;
+  color: darkgreen;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.game button:active{
+  background-color:gold;
+}
+.start{
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+}
